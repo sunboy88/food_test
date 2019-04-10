@@ -13,4 +13,15 @@ class Coupon_m extends CI_Model {
 	    return isset($query->row()->id );
 
 	}
+	public function get_coupon($code) {
+	    $query = $this->db->get_where($this->table,array('code'=>$code));
+	    $couponData = isset($query->row()->value);
+	   // var_dump($query->row()->value);die('zzz');
+	    if(isset($query->row()->value)){
+	    	return $query->row()->value;
+	    }else{
+	    	return false;
+	    }
+
+	}
 }

@@ -44,8 +44,15 @@ class Product extends CI_Controller{
 		}
 		if($this->session->has_userdata('coupon')){
 			$code = $this->session->userdata('coupon');
+			$couponValue = $this->Coupon_m->get_coupon($code);
+
 			$grand_total= ($this->cart->total()*$tax->value/100) + $this->cart->total();
-			$grand_after_coupon = $grand_total - ($grand_total*0.1);
+			
+			if($couponValue != false){
+				$grand_after_coupon = $grand_total - ($grand_total*$couponValue/100);
+			}else{
+				$grand_after_coupon = $grand_total;
+			}
 			$tax_total= $this->cart->total()*$tax->value/100;
 			$output.='
 					<tr>
@@ -68,7 +75,7 @@ class Product extends CI_Controller{
 					<tr>
 						<th colspan="right">Coupon Code</th>
 						<th><input id="coupon_code" type="text" class="" value="'.$code.'">discount 10%</th>
-						<th><button type="button" class=" coupon btn btn_sm btn-info">Apply Coupon</button></th>
+						
 						<th colspan="right"></th>
 						<th><button type="button" class="save_order btn btn_sm btn-success">Save Order</button></th>
 						
@@ -106,13 +113,11 @@ class Product extends CI_Controller{
 		return $output;
 	}
 	function show_cart_coupon($code){
-		// $data = array(
-		// 		'coupon' => $code );
-		// 	$this->cart->insert($data);
+
 		$this->session->set_userdata('coupon',$code);
-			$output = '';
+		$couponValue = $this->Coupon_m->get_coupon($code);
+		$output = '';
 		$no = 0;
-		//var_dump($this->cart->contents());die('zzzz');
 		$tax = $this->Tax_m->get_tax();
 		foreach ($this->cart->contents() as $items) {
 			$no++;
@@ -129,7 +134,12 @@ class Product extends CI_Controller{
 		}
 		$grand_total= $this->cart->total()*$tax->value/100 + $this->cart->total();
 
-		$grand_after_coupon = $grand_total - ($grand_total*0.1);
+		//$grand_after_coupon = $grand_total - ($grand_total*0.1);
+		if($couponValue != false){
+				$grand_after_coupon = $grand_total - ($grand_total*$couponValue/100);
+			}else{
+				$grand_after_coupon = $grand_total;
+		}
 		$tax_total= $this->cart->total()*$tax->value/100;
 		$output.='
 				<tr>
@@ -147,7 +157,7 @@ class Product extends CI_Controller{
 				<tr>
 					<th colspan="right">Coupon Code</th>
 					<th><input id="coupon_code" type="text" class="" value="'.$code.'"></th>
-					<th>Coupon code is right</th>
+					<th style="color:red">Coupon code is right</th>
 					<th colspan="right"></th>
 					<th><button type="button" class="btn btn_sm btn-success">Save Order</button></th>
 					
