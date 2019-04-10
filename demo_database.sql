@@ -71,7 +71,6 @@ DROP TABLE IF EXISTS `orders`;
 
 CREATE TABLE `orders` (
   `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) NOT NULL,
   `order_number` int(11) DEFAULT NULL,
   `cart_data` text DEFAULT NULL,
   `cart_total` float DEFAULT NULL,
