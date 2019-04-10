@@ -100,7 +100,7 @@ class Product extends CI_Controller{
 					</tr>
 					<tr>
 						<th colspan="right">Coupon Code</th>
-						<th><input id="coupon_code" type="text" class=""></th>
+						<th><input id="coupon_code" type="text" class="" placeholder="GO2018"></th>
 						<th><button type="button" class=" coupon btn btn_sm btn-info">Apply Coupon</button></th>
 						<th colspan="right"></th>
 						<th><button type="button" class="btn btn_sm btn-success">Save Order</button></th>
