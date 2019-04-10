@@ -1,0 +1,24 @@
+.img-CO{
+    max-height: 200px;
+    max-width: 200px;
+}
+@media (min-width: 576px) and (max-width: 992px) {
+    .col-sm-4 img {
+        max-width: 140px;
+    }
+    .btn:after{
+        height: 1800%;
+    }
+}
+
+.login-form-title {
+    font-family: Poppins-Regular;
+    font-size: 30px;
+    color: #555555;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    display: block;
+}

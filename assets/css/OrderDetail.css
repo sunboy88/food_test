@@ -1,0 +1,70 @@
+#container{
+	margin-top: 15px;
+}
+#row{
+
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+}
+.img-thumbnail{
+	margin: 2em;
+	height: auto;
+	max-width: 95% ;
+}
+
+#title{
+	color: black;
+	margin-top:1em;
+}
+
+#memberNumber{
+	float: right;
+	margin-right: 3em;
+
+}
+
+#price{
+	color: red;
+	font-size: x-large;
+}
+#btnOk{
+	border-radius: 0;
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 1rem;
+}
+#btnCancel{
+	font-size: 1rem;
+	border-radius: 0;
+	width: 100%;
+	display: none;
+	margin-bottom : 10px;
+}
+#submitButton{
+	border-radius: 0;
+	float: right;
+	width: 20%;
+	margin-top: 17px;
+	margin-bottom: 1em;
+}
+
+.thumbnail-bounce{
+	text-align: center;
+}
+
+.detail-description{
+	margin: 10px 0 10px 0;
+}
+
+.submit-join-order {
+	margin-bottom: 10px;
+}
+
+.detail-description h5 {
+	font-size: 1rem;
+}
+.detail-description p {
+	font-size: 1rem;
+	white-space: pre-line;
+	text-align: justify;
+}

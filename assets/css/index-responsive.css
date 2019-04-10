@@ -1,0 +1,107 @@
+@media only screen and (max-width: 767px) {
+  .navbar-expand-sm .navbar-nav {
+    flex-direction: row;
+  }
+  header .top-navbar {
+    background: #FF9900;
+  }
+  header .top-navbar--item {
+    display: none;
+  }
+  .top-navbar ul li {
+    display: inline-block;
+  }
+
+  header .navbar-nav {
+    margin: 7.5px 0px 7.5px 0px;
+  }
+
+  header .inner .logo {
+    display: none;
+  }
+
+  header .icon-responsive {
+    position: absolute;
+    float: left;
+    opacity: 0.8;
+    color: white;
+  }
+
+  header .icon-responsive i {
+    font-size: 40px;
+  }
+
+  header .inner {
+    height: 200px;
+  }
+
+  .main-content .container {
+    max-width: 100%;
+  }
+
+  .number-joine-res{
+    display: block;
+  }
+  .main-content .container{
+   padding: 0 0 0 0 !important;
+ }
+
+   .thumbnail-wrapper{
+     width: 60%;
+     margin-bottom: 10px;
+   }
+
+   .thumbnail{
+     max-width: 90%;
+   }
+
+   .info-wrapper{
+     width: 40%;
+   }
+
+   .join-order, .join-order a{
+     width: 100%;
+   }
+
+    .join-order, .join-order .btn{
+     width: 100%;
+   }
+
+   .join-order{
+     margin-top: 0;
+   }
+
+   .time-out{
+     font-size: 18px;
+   }
+
+   .number-join{
+     display: none;
+   }
+
+   .number-joine-res{
+     display: block;
+   }
+
+   .joined-res{
+     color: red;
+   }
+   #join-form .row {
+      margin: 10px 0 0 0;
+    }
+
+    #join-form .row1 {
+      margin: 0 0 0 0;
+    }
+
+    .row1 textarea {
+      margin: 0 0 0 0 !important;
+      width: 100%!important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+  header .icon-responsive {
+    display: none;
+  }
+}

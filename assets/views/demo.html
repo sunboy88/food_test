@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home | Order Food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../vendor/bootstrap/js/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/popper.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <div class="container">
+                <div class="logo">
+                    <img src="../images/app-logo.png" border="0" alt="le Soleil Order">
+                </div>
+                <div class="icon-responsive">
+                </div>
+            </div>
+            <div class="top-navbar">
+                <div class="container">
+                    <nav class="navbar navbar-expand-sm">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">
+                                    <i class="fa fa-home"></i>
+                                    <span class="top-navbar--item">Home</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item" data-toggle="modal" data-target="#myModal">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-plus"></i>
+                                    <span class="top-navbar--item">Create</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link joined-order" href="#">
+                                    <i class="fa fa-tasks"></i>
+                                    <span class="top-navbar--item">Joined Orders</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./OrderManagement.html">
+                                    <i class="fa fa-list-ul"></i>
+                                    <span class="top-navbar--item">Created Orders</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" data-toggle="modal" data-target="#login" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-cog"></i>
+                                    <span class="top-navbar--item">Log in</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="nav navbar-nav">
+                </div>
+            </div>
+            <div class="header-background"></div>
+        </div>
+    </header>
+    <section class="main-content flex-1">
+        <div class="container">
+            <div class="content-list">
+                <div class="list-order">
+
+                    <div class="row article">
+                                <a href="./order_detail.html">
+                        <div class="col-md-4 col-sm-4 col-xs-4 thumbnail-wrapper" onclick="redirectUrl('./order_detail.html')">
+                            <div class="thumbnail">
+                                <a href="./order_detail.html">
+                                    <img src="../images/demo2.jpg" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-6 info-wrapper" onclick="redirectUrl('./order_detail.html')">
+                            <h2 class="article-title">
+              								<a class="article-title" href="./order_detail.html">Fry Chicken Rice with Peper</a>
+              							</h2>
+                            <span class="description">
+              								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...
+              							</span>
+
+                            <h2 class="price">
+								<span class="price-text">Price:</span> 50.000 &nbsp; (VND)
+							</h2>
+
+                            <div class="time-out">
+                                <span class="fa fa-clock-o"></span>
+                                <span class="count-down">15:00</span>
+                            </div>
+
+                            <div class="number-joine-res">
+                                <span class="fa fa-user joined-res"></span> &nbsp;
+                                <span>(6 / 9)</span>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-2 join-order">
+                            <button type="button" class="btn btn-success btn-lg" data-toggle="collapse" data-target="#join-form"><span class="fa fa-plus"></span> Join</button>
+
+                            <div class="number-join">
+                                <span class="fa fa-user joined"></span> &nbsp;
+                                <span>(6 / 9)</span>
+                            </div>
+                        </div>
+                        <div id="join-form" class="collapse join-form">
+                            <div class="row">
+                                <div class="col-xl-2 col-md-1"></div>
+                                <div class="col-xl-4 col-md-5">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* Name" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* Group name" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-5">
+                                    <div class="form-group">
+                                        <input class="form-control" type="number" min="0" step="1" placeholder="* Quantity" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* SkypeID" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row1">
+                                <div class="col-xl-2 col-md-1"></div>
+                                <div class="col-xl-8 col-md-10">
+                                    <textarea style="height: 181px" class="form-control" placeholder="Note"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-10 col-md-11">
+                                    <a class="btn btn-primary" data-toggle="modal" data-target="#ModalJoinConfirm" title="Delete">
+                                      Submit
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row article">
+                        <div class="col-md-4 col-sm-4 col-xs-4 thumbnail-wrapper" onclick="redirectUrl('./order_detail.html')">
+                            <div class="thumbnail">
+                                <a href="./order_detail.html">
+                                    <img src="../images/demo1.jpg" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-6 info-wrapper" onclick="redirectUrl('./order_detail.html')">
+                            <h2 class="article-title">
+                                            <a class="article-title" href="./order_detail.html">Fry Cake - 112 Nguyen Van Troi</a>
+                                        </h2>
+                            <span class="description">
+                                            Quá ngon và rẻ. Ai mại zô order chung nào
+                                        </span>
+
+                            <h2 class="price">
+                                            <span class="price-text">Price:</span> 50.000 &nbsp; (VND)
+                                        </h2>
+
+                            <div class="time-out">
+                                <span class="fa fa-clock-o"></span>
+                                <span class="count-down">15:00</span>
+                            </div>
+
+                            <div class="number-joine-res">
+                                <span class="fa fa-user joined-res"></span> &nbsp;
+                                <span>(6 / 9)</span>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-2 join-order">
+
+                            <button type="button" class="btn btn-success btn-lg" data-toggle="collapse" data-target="#join-form1"><span class="fa fa-plus"></span> Join</button>
+
+                            <div class="number-join">
+                                <span class="fa fa-user joined"></span> &nbsp;
+                                <span>(6 / 9)</span>
+                            </div>
+                        </div>
+                        <div id="join-form1" class="collapse join-form">
+                            <div class="row">
+                                <div class="col-xl-2 col-md-1"></div>
+                                <div class="col-xl-4 col-md-5">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* Name" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* Group name" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-5">
+                                    <div class="form-group">
+                                        <input class="form-control" type="number" min="0" step="1" placeholder="* Quantity" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* SkypeID" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row1">
+                                <div class="col-xl-2 col-md-1"></div>
+                                <div class="col-xl-8 col-md-10">
+                                    <textarea style="height: 181px" class="form-control" placeholder="Note"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-10 col-md-11">
+                                    <a class="btn btn-primary" data-toggle="modal" data-target="#ModalJoinConfirm" title="Delete">
+                                      Submit
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row article">
+                        <div class="col-md-4 col-sm-4 col-xs-4 thumbnail-wrapper" onclick="redirectUrl('./order_detail.html')">
+                            <div class="thumbnail">
+                                <a href="./order_detail.html">
+                                    <img src="../images/demo3.jpg" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-6 info-wrapper" onclick="redirectUrl('./order_detail.html')">
+                            <h2 class="article-title">
+
+                                            <a class="article-title" href="./order_detail.html">Miss Chin - Can Cake Nha Lang</a>
+                                        </h2>
+                            <span class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...
+                                        </span>
+
+                            <h2 class="price">
+                                            <span class="price-text">Price:</span> 50.000 &nbsp; (VND)
+                                        </h2>
+
+                            <div class="time-out">
+                                <span class="fa fa-clock-o"></span>
+                                <span class="count-down">15:00</span>
+                            </div>
+
+                            <div class="number-joine-res">
+                                <span class="fa fa-user joined-res"></span> &nbsp;
+                                <span>(6 / 9)</span>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-2 join-order">
+
+                            <button type="button" class="btn btn-success btn-lg" data-toggle="collapse" data-target="#join-form2"><span class="fa fa-plus"></span> Join</button>
+
+                            <div class="number-join">
+                                <span class="fa fa-user joined"></span> &nbsp;
+                                <span>(6 / 9)</span>
+                            </div>
+                        </div>
+                        <div id="join-form2" class="collapse join-form">
+                            <div class="row">
+                                <div class="col-xl-2 col-md-1"></div>
+                                <div class="col-xl-4 col-md-5">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* Name" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* Group name" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-5">
+                                    <div class="form-group">
+                                        <input class="form-control" type="number" min="0" step="1" placeholder="* Quantity" />
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* SkypeID" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row1">
+                                <div class="col-xl-2 col-md-1"></div>
+                                <div class="col-xl-8 col-md-10">
+                                    <textarea style="height: 181px" class="form-control" placeholder="Note"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-10 col-md-11">
+                                    <a class="btn btn-primary" data-toggle="modal" data-target="#ModalJoinConfirm" title="Delete">
+                                      Submit
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row article">
+                        <div class="col-md-4 col-sm-4 col-xs-4 thumbnail-wrapper" onclick="redirectUrl('./order_detail.html')">
+                            <div class="thumbnail">
+                                <a href="./order_detail.html">
+
+                                    <img src="../images/demo2.jpg" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-6 info-wrapper" onclick="redirectUrl('./order_detail.html')">
+                            <h2 class="article-title">
+
+                                            <a class="article-title" href="./order_detail.html">Fry Chicken Rice with Peper</a>
+                                        </h2>
+                            <span class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...
+                                        </span>
+
+                            <h2 class="price">
+                                            <span class="price-text">Price:</span> 50.000 &nbsp; (VND)
+                                        </h2>
+
+                            <div class="time-out">
+                                <span class="fa fa-clock-o"></span>
+                                <span class="count-down">15:00</span>
+                            </div>
+
+                            <div class="number-joine-res">
+                                <span class="fa fa-user joined-res"></span> &nbsp;
+                                <span>(6 / 9)</span>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-2 join-order">
+
+                            <button type="button" class="btn btn-success btn-lg" data-toggle="collapse" data-target="#join-form3"><span class="fa fa-plus"></span> Join</button>
+
+                            <div class="number-join">
+                                <span class="fa fa-user joined"></span> &nbsp;
+                                <span>(6 / 9)</span>
+                            </div>
+                        </div>
+                        <div id="join-form3" class="collapse join-form">
+                            <div class="row">
+                                <div class="col-xl-2 col-md-1"></div>
+                                <div class="col-xl-4 col-md-5">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* Name" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* Group name" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-5">
+                                    <div class="form-group">
+                                        <input class="form-control" type="number" min="0" step="1" placeholder="* Quantity" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* SkypeID" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row1">
+                                <div class="col-xl-2 col-md-1"></div>
+                                <div class="col-xl-8 col-md-10">
+                                    <textarea style="height: 181px" class="form-control" placeholder="Note"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-10 col-md-11">
+                                    <a class="btn btn-primary" data-toggle="modal" data-target="#ModalJoinConfirm" title="Delete">
+                                      Submit
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row article">
+                        <div class="col-md-4 col-sm-4 col-xs-4 thumbnail-wrapper" onclick="redirectUrl('./order_detail.html')">
+                            <div class="thumbnail">
+                                <a href="./order_detail.html">
+
+                                    <img src="../images/demo2.jpg" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-6 info-wrapper" onclick="redirectUrl('./order_detail.html')">
+                            <h2 class="article-title">
+
+                                            <a class="article-title" href="./order_detail.html">Fry Chicken Rice with Peper</a>
+                                        </h2>
+                            <span class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...
+                                        </span>
+
+                            <h2 class="price">
+                                            <span class="price-text">Price:</span> 50.000 &nbsp; (VND)
+                                        </h2>
+
+                            <div class="time-out">
+                                <span class="fa fa-clock-o"></span>
+                                <span class="count-down">15:00</span>
+                            </div>
+
+                            <div class="number-joine-res">
+                                <span class="fa fa-user joined-res"></span> &nbsp;
+                                <span>(6 / 9)</span>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-2 join-order">
+
+                            <button type="button" class="btn btn-success btn-lg" data-toggle="collapse" data-target="#join-form4"><span class="fa fa-plus"></span> Join</button>
+
+                            <div class="number-join">
+                                <span class="fa fa-user joined"></span> &nbsp;
+                                <span>(6 / 9)</span>
+                            </div>
+                        </div>
+                        <div id="join-form4" class="collapse join-form">
+                            <div class="row">
+                                <div class="col-xl-2 col-md-1"></div>
+                                <div class="col-xl-4 col-md-5">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* Name" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* Group name" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-5">
+                                    <div class="form-group">
+                                        <input class="form-control" type="number" min="0" step="1" placeholder="* Quantity" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* SkypeID" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row1">
+                                <div class="col-xl-2 col-md-1"></div>
+                                <div class="col-xl-8 col-md-10">
+                                    <textarea style="height: 181px" class="form-control" placeholder="Note"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-10 col-md-11">
+                                    <a class="btn btn-primary" data-toggle="modal" data-target="#ModalJoinConfirm" title="Delete">
+                                      Submit
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row article">
+                        <div class="col-md-4 col-sm-4 col-xs-4 thumbnail-wrapper" onclick="redirectUrl('./order_detail.html')">
+                            <div class="thumbnail">
+                                <a href="./order_detail.html">
+
+                                    <img src="../images/demo2.jpg" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-6 info-wrapper" onclick="redirectUrl('./order_detail.html')">
+                            <h2 class="article-title">
+
+                                            <a class="article-title" href="./order_detail.html">Fry Chicken Rice with Peper</a>
+                                        </h2>
+                            <span class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...
+                                        </span>
+
+                            <h2 class="price">
+                                            <span class="price-text">Price:</span> 50.000 &nbsp; (VND)
+                                        </h2>
+
+                            <div class="time-out">
+                                <span class="fa fa-clock-o"></span>
+                                <span class="count-down">15:00</span>
+                            </div>
+
+                            <div class="number-joine-res">
+                                <span class="fa fa-user joined-res"></span> &nbsp;
+                                <span>(6 / 9)</span>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-2 join-order">
+
+                            <button type="button" class="btn btn-success btn-lg" data-toggle="collapse" data-target="#join-form5"><span class="fa fa-plus"></span> Join</button>
+
+                            <div class="number-join">
+                                <span class="fa fa-user joined"></span> &nbsp;
+                                <span>(6 / 9)</span>
+                            </div>
+                        </div>
+                        <div id="join-form5" class="collapse join-form">
+                            <div class="row">
+                                <div class="col-xl-2 col-md-1"></div>
+                                <div class="col-xl-4 col-md-5">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* Name" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* Group name" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-5">
+                                    <div class="form-group">
+                                        <input class="form-control" type="number" min="0" step="1" placeholder="* Quantity" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* SkypeID" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row1">
+                                <div class="col-xl-2 col-md-1"></div>
+                                <div class="col-xl-8 col-md-10">
+                                    <textarea style="height: 181px" class="form-control" placeholder="Note"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-10 col-md-11">
+                                    <a class="btn btn-primary" data-toggle="modal" data-target="#ModalJoinConfirm" title="Delete">
+                                      Submit
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row article">
+                        <div class="col-md-4 col-sm-4 col-xs-4 thumbnail-wrapper" onclick="redirectUrl('./order_detail.html')">
+                            <div class="thumbnail">
+                                <a href="./order_detail.html">
+                                    <img src="../images/demo2.jpg" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-6 info-wrapper" onclick="redirectUrl('./order_detail.html')">
+                            <h2 class="article-title">
+                                            <a class="article-title" href="./order_detail.html">Fry Chicken Rice with Peper</a>
+                                        </h2>
+                            <span class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...
+                                        </span>
+
+                            <h2 class="price">
+                                            <span class="price-text">Price:</span> 50.000 &nbsp; (VND)
+                                        </h2>
+
+                            <div class="time-out">
+                                <span class="fa fa-clock-o"></span>
+                                <span class="count-down">15:00</span>
+                            </div>
+
+                            <div class="number-joine-res">
+                                <span class="fa fa-user joined-res"></span> &nbsp;
+                                <span>(6 / 9)</span>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-2 join-order">
+                            <button type="button" class="btn btn-success btn-lg" data-toggle="collapse" data-target="#join-form6"><span class="fa fa-plus"></span> Join</button>
+
+                            <div class="number-join">
+                                <span class="fa fa-user joined"></span> &nbsp;
+                                <span>(6 / 9)</span>
+                            </div>
+                        </div>
+                        <div id="join-form6" class="collapse join-form">
+                            <div class="row">
+                                <div class="col-xl-2 col-md-1"></div>
+                                <div class="col-xl-4 col-md-5">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* Name" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* Group name" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-5">
+                                    <div class="form-group">
+                                        <input class="form-control" type="number" min="0" step="1" placeholder="* Quantity" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="* SkypeID" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row1">
+                                <div class="col-xl-2 col-md-1"></div>
+                                <div class="col-xl-8 col-md-10">
+                                    <textarea style="height: 181px" class="form-control" placeholder="Note"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-10 col-md-11">
+                                    <a class="btn btn-primary" data-toggle="modal" data-target="#ModalJoinConfirm" title="Delete">
+                                      Submit
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" >
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 py-5 d-flex">
+                    <ul class="pagination mx-auto">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">«</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">»</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="subfooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4 text-md-right">
+                        <h5 class="mb-3">Company</h5>
+                        <img src="../images/axonactive.svg" border="0" />
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4 text-md-right">
+                        <h5 class="mb-3">Headquarter</h5>
+                        <a class="d-block text-decoration-none" href="https://www.google.com/maps/place/Axon+Active+Vietnam/@10.8086532,106.6631633,18z/data=!4m5!3m4!1s0x3175293cb57e2cad:0x8f2bef857837085f!8m2!3d10.8092065!4d106.6641128" target="_blank">
+                          <i aria-hidden="true" class="fa fa-map-marker"></i>
+                          HO CHI MINH CITY, VIETNAM
+                        </a>
+                        <p>39B Truong Son Street,</p>
+                        <p>Ward 4, Tan Binh District,,</p>
+                        <p>Ho Chi Minh City, Vietnam</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4 text-md-right">
+                        <h5 class="mb-3">Office</h5>
+                        <a class="d-block text-decoration-none" href="https://www.google.com/maps/place/Axon+Active+Vietnam/@16.04151,108.2198872,18z/data=!4m5!3m4!1s0x314219e9fae5b5f3:0x938e9d3475a89baf!8m2!3d16.0408888!4d108.2206436" target="_blank">
+                          <i  aria-hidden="true" class="fa fa-map-marker"></i>
+                          DA NANG, VIETNAM
+                        </a>
+                        <a class="d-block text-decoration-none" href="https://www.google.com/maps/place/Axon+Active+Inc./@37.7846883,-122.4112432,18z/data=!4m5!3m4!1s0x8085808f9025ce29:0x88675a56056af0ac!8m2!3d37.784913!4d-122.410747" target="_blank">
+                          <i aria-hidden="true" class="fa fa-map-marker"></i>
+                          CAN THO, VIETNAM
+                        </a>
+                        <a class="d-block text-decoration-none" href="https://www.google.com/maps/place/Axon+Active+Inc./@37.784913,-122.410747,15z/data=!4m5!3m4!1s0x0:0x88675a56056af0ac!8m2!3d37.784913!4d-122.410747" target="_blank">
+                          <i aria-hidden="true" class="fa fa-map-marker"></i>
+                          SAN FRANCISCO, USA
+                        </a>
+                        <a class="d-block text-decoration-none" href="https://www.google.com/maps/place/Axon+Active+Inc./@47.0502456,8.2978078,15z/data=!4m2!3m1!1s0x0:0x5b40af4685e176d7?sa=X&amp;ved=0ahUKEwiKqd2jtuLWAhVEn5QKHSO7DYAQ_BIIczAL" target="_blank">
+                          <i aria-hidden="true" class="fa fa-map-marker"></i>
+                          LUZERN, SWITZERLAND
+                        </a>
+                    </div>
+                </div>
+                <div class="row bottom-footer">
+                    <div class="col-md-12 sprate-line"></div>
+                    <div class="col-md-8">A product of AXON ACTIVE VIETNAM @ 2018 | All rights reserved</div>
+                    <div class="col-md-4" style="text-align: right;">
+                        <a href="#">About us |</a>
+                        <a href="#" title="#">Privacy statement</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <div id="myModal" class="modal fade" role="dialog" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title login-form-title">Create Order</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="get" style="font-family: Poppins-Regular">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-4" style="text-align: center;">
+                                    <img class="img-CO" src="../images/Axon-icon.jpg">
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Title" />
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input class="form-control" type="number" min="0" step="1000" placeholder="Price" />
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">VND</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="number" min="0" step="1" placeholder="Maximum Joiner" />
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group date" style="height: 38px">
+                                            <input class="form-control" type="number" min="0" step="5" placeholder="Minutes to Time Out" id="timeText" value="">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="timepicker">MIN</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <textarea style="height: 181px" class="form-control" placeholder="Description"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="login-form-btn">
+                        <Span>Submit</Span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="login" role="dialog" data-dismiss="modal">
+        <div class="modal-dialog modal-lg modal-dialog-centered" style="width: auto">
+            <div class="container-login">
+                <div class="wrap-login modal-content">
+                    <form class="login-form">
+                        <span class="login-form-title p-b-34">
+													<strong>Account Login</strong>
+												</span>
+                        <div class="wrap-input100 rs1-wrap-input100 validate-input  m-b-20" data-validate="Type user name">
+                            <input id="first-name" class="input100" type="text" name="username" placeholder="User name">
+                            <span class="focus-input100"></span>
+                        </div>
+                        <div class="wrap-input100 rs2-wrap-input100 validate-input  m-b-20" data-validate="Type password">
+                            <input class="input100" type="password" name="pass" placeholder="Password">
+                            <span class="focus-input100"></span>
+                        </div>
+                        <div class="wrap-input100 rs1-wrap-input100 validate-input  m-b-20" data-validate="">
+                            <input id="team-name-input" class="input100" type="text" name="teamName" placeholder="Team name">
+                            <span class="focus-input100"></span>
+                        </div>
+                        <div class="wrap-input100 rs2-wrap-input100 validate-input  m-b-20" data-validate="">
+                            <input id ="skype-input" class="input100" type="text" name="skype" placeholder="Skype">
+                            <span class="focus-input100"></span>
+                        </div>
+
+                        <div class="login-form-label">
+                            <input type="checkbox" name="rememberme" value="newletter">
+                            <label for="rememberme"><strong>Remember me</strong></label>
+                        </div>
+
+                        <div class="container-login-form-btn p-b-10">
+                            <button type="button" class="login-form-btn" id ="btnSingin">
+                                Sign in
+                            </button>
+                        </div>
+                        <div class="container-login-form-btn">
+                            <button type="button" class="login-form-btn" id="btnRegister">
+                               Register
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="login-more" style="background-image: url('../images/Axon-icon.jpg');"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="ModalJoinConfirm" class="modal fade" role="dialog" tabindex="-1" aria-labelledby="ModalJoinConfirm" aria-hidden="true" >
+    <div class="modal-dialog modal-lg modal-dialog-centered Del" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="#" method="get">
+                    <div class="container-fluid">
+                        <div class="row-content">
+                            <div class="col-sm-6">
+                                <h4>Are you sure to join this order?</h4>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">OK</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancle</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script type="text/javascript">
+        $('.joined-order').click(function() {
+            $('.btn-success').replaceWith("<a href='#' class='btn btn-danger btn-lg'><span class='fa fa-times'></span> Join</a>");
+        });
+
+        function redirect(url) {
+            window.location.replace(url);
+        }
+    </script>
+<!-- form login -->
+<script type="text/javascript" src="../vendor/bootstrap/js/jquery-3.2.1.slim.min.js"></script>
+    <script>
+        $( document ).ready(function() {
+            $("#btnRegister").click(function() {
+            $("#team-name-input").show();
+             $("#skype-input").show();
+              $(".remember-form-label").hide();
+              $("#title-form").html("<strong>Register Account<strong>");
+        });
+
+
+        $("#btnSingin").click(function() {
+                $("#team-name-input").hide();
+                $("#skype-input").hide();
+                $(".remember-form-label").show();
+                $("#title-form").html("<strong>Sigin Account<strong>");
+            });
+
+        });
+
+
+        function redirectUrl(url){
+            window.location.href = url;
+        }
+    </script>
+
+
+</body>
+
+</html>

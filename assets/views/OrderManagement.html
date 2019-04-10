@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OrderManagement</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../vendor/bootstrap/js/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/popper.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div class="container">
+                <div class="logo">
+                    <img src="../images/app-logo.png" border="0" alt="le Soleil Order">
+                </div>
+                <div class="icon-responsive">
+                </div>
+            </div>
+            <div class="top-navbar">
+                <div class="container">
+                    <nav class="navbar navbar-expand-sm">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">
+                                    <i class="fa fa-home"></i>
+                                    <span class="top-navbar--item">Home</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item" data-toggle="modal" data-target="#myModal">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-plus"></i>
+                                    <span class="top-navbar--item">Create</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link joined-order" href="#">
+                                    <i class="fa fa-tasks"></i>
+                                    <span class="top-navbar--item">Joined Orders</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./OrderManagement.html">
+                                    <i class="fa fa-list-ul"></i>
+                                    <span class="top-navbar--item">Created Orders</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" data-toggle="modal" data-target="#login" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-cog"></i>
+                                    <span class="top-navbar--item">Account</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="nav navbar-nav">
+                </div>
+            </div>
+            <div class="header-background"></div>
+        </div>
+    </header>s
+    <section class="main-content flex-1">
+        <div class="container">
+            <div class="content-list">
+               <div class="list-order">
+                     <div id="accordion">
+                        <div class="row article" >
+                            <div class="row article-content">
+                                <div class="col-md-4 col-sm-4 col-xs-4 thumbnail-wrapper" onclick="redirectUrl('./order_detail.html')">
+                                    <div class="thumbnail">
+                                        <a href="#">
+                                            <img src="https://static.vietnammm.com/images/restaurants/vn/QN3055O/logo_465x320.png"/>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-xs-6 info-wrapper" onclick="redirectUrl('./order_detail.html')">
+                                    <h2 class="article-title">
+                                        <a class="article-title" href="">Pizza</a>
+                                    </h2>
+                                    <span class="description">
+                                        Buy Pizza from Da Nang city
+                                    </span>
+                                    <div class="number-join-mana">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        &nbsp;<span>(6 / 9)</span>
+                                    </div>
+                                    <h2 class="price">
+                                        <span class="price-text">Price:</span> 50.000 &nbsp; (VND)
+                                    </h2>
+
+                                    <div class="time-out">
+                                        <span class="fa fa-clock-o"></span>
+                                        <span class="count-down">15:00</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 btn-edit">
+                                    <a class="btn btn-success btn-lg" data-toggle="modal" data-target="#ModalEdit" title="Edit">
+                                       <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="btn btn-success btn-lg" data-toggle="modal" data-target="#ModalDel" title="Delete">
+                                       <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row article-shift"  data-toggle="collapse" href="#collapse">
+                                <a id="1" class="angle" onclick="changeIcon(this.id)"><i class="fa fa-angle-double-down fa-2x"></i></a>
+                            </div>
+                            
+                        </div>
+                        <div class="list-joiner">
+                            <div id="collapse" class="panel-collapse collapse" data-parent="#accordion">
+                                <div class="table-container">
+                                    <table class="table table-filter">
+                                        <tr class="row">
+                                            <td class="col-md-1 star">
+                                                <a>
+                                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </td>
+                                            <td class="col-md-1 media">
+                                                <a href="#" class="pull-center">
+                                                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                </a>
+                                            </td>       
+                                            <td class="col-md-4 col-sm-2 media-body"> 
+                                                <h4 class="title">Tín</h4>
+                                                <p class="summary">Pizza chay</p>
+                                            </td>
+                                            <td class="col-md-3 skype"> 
+                                               <span>nick skype of Tín</span>
+                                            </td>
+                                            <td class="col-md-2 team"><span>Le soleil</span></td>
+                                            <td class="col-md-1 amount"><span>2</span></td>
+                                        </tr>
+                                        <tr class="row">
+                                            <td class="col-md-1 star">
+                                                <a>
+                                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </td>
+                                            <td class="col-md-1 media">
+                                                <a href="#" class="pull-center">
+                                                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                </a>
+                                            </td>       
+                                            <td class="col-md-4 col-sm-2 media-body"> 
+                                                <h4 class="title">Hơn</h4>
+                                                <p class="summary">Pizza phô mai không ớttttttttttttttttttttttttttttttttttttttttttttttttt.............</p>
+                                            </td>
+                                            <td class="col-md-3 skype"> 
+                                               <span>nick skype of Hơn</span>
+                                            </td>
+                                            <td class="col-md-2 team"><span>Le soleil</span></td>
+                                            <td class="col-md-1 amount"><span>3</span></td>
+                                        </tr>
+                                        <tr class="row">
+                                            <td class="col-md-1 star">
+                                                <a>
+                                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </td>
+                                            <td class="col-md-1 media">
+                                                <a href="#" class="pull-center">
+                                                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                </a>
+                                            </td>       
+                                            <td class="col-md-4 col-sm-2 media-body"> 
+                                                <h4 class="title">Tố</h4>
+                                                <p class="summary">Pizza Hải Sản</p>
+                                            </td>
+                                            <td class="col-md-3 skype"> 
+                                               <span>nick skype of Tố</span>
+                                            </td>
+                                            <td class="col-md-2 team"><span>Le soleil</span></td>
+                                            <td class="col-md-1 amount"><span>1</span></td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row article" >
+                            <div class="row article-content">
+                                <div class="col-md-4 col-sm-4 col-xs-4 thumbnail-wrapper" onclick="redirectUrl('./order_detail.html')">
+                                    <div class="thumbnail">
+                                        <a href="#">
+                                            <img src="https://static.vietnammm.com/images/restaurants/vn/QN3055O/logo_465x320.png"/>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-xs-6 info-wrapper" onclick="redirectUrl('./order_detail.html')">
+                                    <h2 class="article-title">
+                                        <a class="article-title" href="">Pizza</a>
+                                    </h2>
+                                    <span class="description">
+                                        Buy Pizza from Da Nang city
+                                    </span>
+                                    <div class="number-join-mana">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        &nbsp;<span>(6 / 9)</span>
+                                    </div>
+                                    <h2 class="price">
+                                        <span class="price-text">Price:</span> 50.000 &nbsp; (VND)
+                                    </h2>
+
+                                    <div class="time-out">
+                                        <span class="fa fa-clock-o"></span>
+                                        <span class="count-down">15:00</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 btn-edit">
+                                    <a class="btn btn-success btn-lg" data-toggle="modal" data-target="#ModalEdit" title="Edit">
+                                       <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="btn btn-success btn-lg" data-toggle="modal" data-target="#ModalDel" title="Delete">
+                                       <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row article-shift"  data-toggle="collapse" href="#collapse2" >
+                                 <a id="2" class="angle" onclick="changeIcon(this.id)"><i class="fa fa-angle-double-down fa-2x"></i></a>
+                            </div>
+                            
+                        </div>
+                        <div class="list-joiner">
+                            <div id="collapse2" class="panel-collapse collapse" data-parent="#accordion">
+                                <div class="table-container">
+                                    <table class="table table-filter">
+                                        <tr class="row">
+                                            <td class="col-md-1 star">
+                                                <a>
+                                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </td>
+                                            <td class="col-md-1 media">
+                                                <a href="#" class="pull-center">
+                                                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                </a>
+                                            </td>       
+                                            <td class="col-md-4 col-sm-2 media-body"> 
+                                                <h4 class="title">Ánh</h4>
+                                                <p class="summary">Pizza thịt bò không ớt</p>
+                                            </td>
+                                            <td class="col-md-3 skype"> 
+                                               <span>nick skype of Ánh</span>
+                                            </td>
+                                            <td class="col-md-2 team"><span>Le soleil</span></td>
+                                            <td class="col-md-1 amount"><span>3</span></td>
+                                        </tr>
+                                        <tr class="row">
+                                            <td class="col-md-1 star">
+                                                <a>
+                                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </td>
+                                            <td class="col-md-1 media">
+                                                <a href="#" class="pull-center">
+                                                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                </a>
+                                            </td>       
+                                            <td class="col-md-4 col-sm-2 media-body"> 
+                                                <h4 class="title">Phúc</h4>
+                                                <p class="summary">Pizza thập cẩm</p>
+                                            </td>
+                                            <td class="col-md-3 skype"> 
+                                               <span>nick skype of Phúc</span>
+                                            </td>
+                                            <td class="col-md-2 team"><span>Le soleil</span></td>
+                                            <td class="col-md-1 amount"><span>4</span></td>
+                                        </tr>
+                                        <tr class="row">
+                                            <td class="col-md-1 star">
+                                                <a>
+                                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </td>
+                                            <td class="col-md-1 media">
+                                                <a href="#" class="pull-center">
+                                                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                </a>
+                                            </td>       
+                                            <td class="col-md-4 col-sm-2 media-body"> 
+                                                <h4 class="title">Hơn</h4>
+                                                <p class="summary">Pizza phô mai không ớt</p>
+                                            </td>
+                                            <td class="col-md-3 skype"> 
+                                               <span>nick skype</span>
+                                            </td>
+                                            <td class="col-md-2 team"><span>Le soleil</span></td>
+                                            <td class="col-md-1 amount"><span>3</span></td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row article" >
+                            <div class="row article-content">
+                                <div class="col-md-4 col-sm-4 col-xs-4 thumbnail-wrapper" onclick="redirectUrl('./order_detail.html')">
+                                    <div class="thumbnail">
+                                        <a href="#">
+                                            <img src="https://static.vietnammm.com/images/restaurants/vn/QN3055O/logo_465x320.png"/>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-xs-6 info-wrapper" onclick="redirectUrl('./order_detail.html')">
+                                    <h2 class="article-title">
+                                        <a class="article-title" href="">Pizza</a>
+                                    </h2>
+                                    <span class="description">
+                                        Buy Pizza from Da Nang city
+                                    </span>
+                                    <div class="number-join-mana">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        &nbsp;<span>(6 / 9)</span>
+                                    </div>
+                                    <h2 class="price">
+                                        <span class="price-text">Price:</span> 50.000 &nbsp; (VND)
+                                    </h2>
+
+                                    <div class="time-out">
+                                        <span class="fa fa-clock-o"></span>
+                                        <span class="count-down">15:00</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 btn-edit">
+                                    <a class="btn btn-success btn-lg" data-toggle="modal" data-target="#ModalEdit" title="Edit">
+                                       <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="btn btn-success btn-lg" data-toggle="modal" data-target="#ModalDel" title="Delete">
+                                       <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row article-shift"  data-toggle="collapse" href="#collapse3" >
+                                 <a id="5" class="angle" onclick="changeIcon(this.id)"><i class="fa fa-angle-double-down fa-2x"></i></a>
+                            </div>
+                            
+                        </div>
+                        <div class="list-joiner">
+                            <div id="collapse3" class="panel-collapse collapse" data-parent="#accordion">
+                                <div class="table-container">
+                                    <table class="table table-filter">
+                                        <tr class="row">
+                                            <td class="col-md-1 star">
+                                                <a>
+                                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </td>
+                                            <td class="col-md-1 media">
+                                                <a href="#" class="pull-center">
+                                                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                </a>
+                                            </td>       
+                                            <td class="col-md-4 col-sm-2 media-body"> 
+                                                <h4 class="title">Ánh</h4>
+                                                <p class="summary">Pizza thịt bò không ớt</p>
+                                            </td>
+                                            <td class="col-md-3 skype"> 
+                                               <span>nick skype of Ánh</span>
+                                            </td>
+                                            <td class="col-md-2 team"><span>Le soleil</span></td>
+                                            <td class="col-md-1 amount"><span>3</span></td>
+                                        </tr>
+                                        <tr class="row">
+                                            <td class="col-md-1 star">
+                                                <a>
+                                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </td>
+                                            <td class="col-md-1 media">
+                                                <a href="#" class="pull-center">
+                                                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                </a>
+                                            </td>       
+                                            <td class="col-md-4 col-sm-2 media-body"> 
+                                                <h4 class="title">Phúc</h4>
+                                                <p class="summary">Pizza thập cẩm</p>
+                                            </td>
+                                            <td class="col-md-3 skype"> 
+                                               <span>nick skype of Phúc</span>
+                                            </td>
+                                            <td class="col-md-2 team"><span>Le soleil</span></td>
+                                            <td class="col-md-1 amount"><span>4</span></td>
+                                        </tr>
+                                        <tr class="row">
+                                            <td class="col-md-1 star">
+                                                <a>
+                                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </td>
+                                            <td class="col-md-1 media">
+                                                <a href="#" class="pull-center">
+                                                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                </a>
+                                            </td>       
+                                            <td class="col-md-4 col-sm-2 media-body"> 
+                                                <h4 class="title">Hơn</h4>
+                                                <p class="summary">Pizza phô mai không ớt</p>
+                                            </td>
+                                            <td class="col-md-3 skype"> 
+                                               <span>nick skype</span>
+                                            </td>
+                                            <td class="col-md-2 team"><span>Le soleil</span></td>
+                                            <td class="col-md-1 amount"><span>3</span></td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row article" >
+                            <div class="row article-content">
+                                <div class="col-md-4 col-sm-4 col-xs-4 thumbnail-wrapper" onclick="redirectUrl('./order_detail.html')">
+                                    <div class="thumbnail">
+                                        <a href="#">
+                                            <img src="https://static.vietnammm.com/images/restaurants/vn/QN3055O/logo_465x320.png"/>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-xs-6 info-wrapper" onclick="redirectUrl('./order_detail.html')">
+                                    <h2 class="article-title">
+                                        <a class="article-title" href="">Pizza</a>
+                                    </h2>
+                                    <span class="description">
+                                        Buy Pizza from Da Nang city
+                                    </span>
+                                    <div class="number-join-mana">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        &nbsp;<span>(6 / 9)</span>
+                                    </div>
+                                    <h2 class="price">
+                                        <span class="price-text">Price:</span> 50.000 &nbsp; (VND)
+                                    </h2>
+
+                                    <div class="time-out">
+                                        <span class="fa fa-clock-o"></span>
+                                        <span class="count-down">15:00</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 btn-edit">
+                                    <a class="btn btn-success btn-lg" data-toggle="modal" data-target="#ModalEdit" title="Edit">
+                                       <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="btn btn-success btn-lg" data-toggle="modal" data-target="#ModalDel" title="Delete">
+                                       <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row article-shift"  data-toggle="collapse" href="#collapse4" >
+                                 <a id="3" class="angle" onclick="changeIcon(this.id)"><i class="fa fa-angle-double-down fa-2x"></i></a>
+                            </div>
+                            
+                        </div>
+                        <div class="list-joiner">
+                            <div id="collapse4" class="panel-collapse collapse" data-parent="#accordion">
+                                <div class="table-container">
+                                    <table class="table table-filter">
+                                        <tr class="row">
+                                            <td class="col-md-1 star">
+                                                <a>
+                                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </td>
+                                            <td class="col-md-1 media">
+                                                <a href="#" class="pull-center">
+                                                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                </a>
+                                            </td>       
+                                            <td class="col-md-4 col-sm-2 media-body"> 
+                                                <h4 class="title">Ánh</h4>
+                                                <p class="summary">Pizza thịt bò không ớt</p>
+                                            </td>
+                                            <td class="col-md-3 skype"> 
+                                               <span>nick skype of Ánh</span>
+                                            </td>
+                                            <td class="col-md-2 team"><span>Le soleil</span></td>
+                                            <td class="col-md-1 amount"><span>3</span></td>
+                                        </tr>
+                                        <tr class="row">
+                                            <td class="col-md-1 star">
+                                                <a>
+                                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </td>
+                                            <td class="col-md-1 media">
+                                                <a href="#" class="pull-center">
+                                                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                </a>
+                                            </td>       
+                                            <td class="col-md-4 col-sm-2 media-body"> 
+                                                <h4 class="title">Phúc</h4>
+                                                <p class="summary">Pizza thập cẩm</p>
+                                            </td>
+                                            <td class="col-md-3 skype"> 
+                                               <span>nick skype of Phúc</span>
+                                            </td>
+                                            <td class="col-md-2 team"><span>Le soleil</span></td>
+                                            <td class="col-md-1 amount"><span>4</span></td>
+                                        </tr>
+                                        <tr class="row">
+                                            <td class="col-md-1 star">
+                                                <a>
+                                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </td>
+                                            <td class="col-md-1 media">
+                                                <a href="#" class="pull-center">
+                                                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                </a>
+                                            </td>       
+                                            <td class="col-md-4 col-sm-2 media-body"> 
+                                                <h4 class="title">Hơn</h4>
+                                                <p class="summary">Pizza phô mai không ớt</p>
+                                            </td>
+                                            <td class="col-md-3 skype"> 
+                                               <span>nick skype</span>
+                                            </td>
+                                            <td class="col-md-2 team"><span>Le soleil</span></td>
+                                            <td class="col-md-1 amount"><span>3</span></td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row article" >
+                            <div class="row article-content">
+                                <div class="col-md-4 col-sm-4 col-xs-4 thumbnail-wrapper" onclick="redirectUrl('./order_detail.html')">
+                                    <div class="thumbnail">
+                                        <a href="#">
+                                            <img src="https://static.vietnammm.com/images/restaurants/vn/QN3055O/logo_465x320.png"/>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-xs-6 info-wrapper" onclick="redirectUrl('./order_detail.html')">
+                                    <h2 class="article-title">
+                                        <a class="article-title" href="">Pizza</a>
+                                    </h2>
+                                    <span class="description">
+                                        Buy Pizza from Da Nang city
+                                    </span>
+                                    <div class="number-join-mana">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        &nbsp;<span>(6 / 9)</span>
+                                    </div>
+                                    <h2 class="price">
+                                        <span class="price-text">Price:</span> 50.000 &nbsp; (VND)
+                                    </h2>
+
+                                    <div class="time-out">
+                                        <span class="fa fa-clock-o"></span>
+                                        <span class="count-down">15:00</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 btn-edit">
+                                    <a class="btn btn-success btn-lg" data-toggle="modal" data-target="#ModalEdit" title="Edit">
+                                       <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="btn btn-success btn-lg" data-toggle="modal" data-target="#ModalDel" title="Delete">
+                                       <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row article-shift"  data-toggle="collapse" href="#collapse5" >
+                                 <a id="4" class="angle" onclick="changeIcon(this.id)"><i class="fa fa-angle-double-down fa-2x"></i></a>
+                            </div>
+                            
+                        </div>
+                        <div class="list-joiner">
+                            <div id="collapse5" class="panel-collapse collapse" data-parent="#accordion">
+                                <div class="table-container">
+                                    <table class="table table-filter">
+                                        <tr class="row">
+                                            <td class="col-md-1 star">
+                                                <a>
+                                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </td>
+                                            <td class="col-md-1 media">
+                                                <a href="#" class="pull-center">
+                                                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                </a>
+                                            </td>       
+                                            <td class="col-md-4 col-sm-2 media-body"> 
+                                                <h4 class="title">Ánh</h4>
+                                                <p class="summary">Pizza thịt bò không ớt</p>
+                                            </td>
+                                            <td class="col-md-3 skype"> 
+                                               <span>nick skype of Ánh</span>
+                                            </td>
+                                            <td class="col-md-2 team"><span>Le soleil</span></td>
+                                            <td class="col-md-1 amount"><span>3</span></td>
+                                        </tr>
+                                        <tr class="row">
+                                            <td class="col-md-1 star">
+                                                <a>
+                                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </td>
+                                            <td class="col-md-1 media">
+                                                <a href="#" class="pull-center">
+                                                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                </a>
+                                            </td>       
+                                            <td class="col-md-4 col-sm-2 media-body"> 
+                                                <h4 class="title">Phúc</h4>
+                                                <p class="summary">Pizza thập cẩm</p>
+                                            </td>
+                                            <td class="col-md-3 skype"> 
+                                               <span>nick skype of Phúc</span>
+                                            </td>
+                                            <td class="col-md-2 team"><span>Le soleil</span></td>
+                                            <td class="col-md-1 amount"><span>4</span></td>
+                                        </tr>
+                                        <tr class="row">
+                                            <td class="col-md-1 star">
+                                                <a>
+                                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </td>
+                                            <td class="col-md-1 media">
+                                                <a href="#" class="pull-center">
+                                                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                </a>
+                                            </td>       
+                                            <td class="col-md-4 col-sm-2 media-body"> 
+                                                <h4 class="title">Hơn</h4>
+                                                <p class="summary">Pizza phô mai không ớt</p>
+                                            </td>
+                                            <td class="col-md-3 skype"> 
+                                               <span>nick skype</span>
+                                            </td>
+                                            <td class="col-md-2 team"><span>Le soleil</span></td>
+                                            <td class="col-md-1 amount"><span>3</span></td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 py-5 d-flex">
+                    <ul class="pagination mx-auto">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">«</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">»</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+</div>
+    </section>
+
+    <footer>
+        <div class="subfooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4 text-md-right">
+                        <h5 class="mb-3">Company</h5>
+                        <img src="../images/axonactive.svg" border="0" />
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4 text-md-right">
+                        <h5 class="mb-3">Headquarter</h5>
+                        <a class="d-block text-decoration-none" href="https://www.google.com/maps/place/Axon+Active+Vietnam/@10.8086532,106.6631633,18z/data=!4m5!3m4!1s0x3175293cb57e2cad:0x8f2bef857837085f!8m2!3d10.8092065!4d106.6641128" target="_blank">
+                          <i aria-hidden="true" class="fa fa-map-marker"></i>
+                          HO CHI MINH CITY, VIETNAM
+                        </a>
+                        <p>39B Truong Son Street,</p>
+                        <p>Ward 4, Tan Binh District,,</p>
+                        <p>Ho Chi Minh City, Vietnam</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4 text-md-right">
+                        <h5 class="mb-3">Office</h5>
+                        <a class="d-block text-decoration-none" href="https://www.google.com/maps/place/Axon+Active+Vietnam/@16.04151,108.2198872,18z/data=!4m5!3m4!1s0x314219e9fae5b5f3:0x938e9d3475a89baf!8m2!3d16.0408888!4d108.2206436" target="_blank">
+                          <i  aria-hidden="true" class="fa fa-map-marker"></i>
+                          DA NANG, VIETNAM
+                        </a>
+                        <a class="d-block text-decoration-none" href="https://www.google.com/maps/place/Axon+Active+Inc./@37.7846883,-122.4112432,18z/data=!4m5!3m4!1s0x8085808f9025ce29:0x88675a56056af0ac!8m2!3d37.784913!4d-122.410747" target="_blank">
+                          <i aria-hidden="true" class="fa fa-map-marker"></i>
+                          CAN THO, VIETNAM
+                        </a>
+                        <a class="d-block text-decoration-none" href="https://www.google.com/maps/place/Axon+Active+Inc./@37.784913,-122.410747,15z/data=!4m5!3m4!1s0x0:0x88675a56056af0ac!8m2!3d37.784913!4d-122.410747" target="_blank">
+                          <i aria-hidden="true" class="fa fa-map-marker"></i>
+                          SAN FRANCISCO, USA
+                        </a>
+                        <a class="d-block text-decoration-none" href="https://www.google.com/maps/place/Axon+Active+Inc./@47.0502456,8.2978078,15z/data=!4m2!3m1!1s0x0:0x5b40af4685e176d7?sa=X&amp;ved=0ahUKEwiKqd2jtuLWAhVEn5QKHSO7DYAQ_BIIczAL" target="_blank">
+                          <i aria-hidden="true" class="fa fa-map-marker"></i>
+                          LUZERN, SWITZERLAND
+                        </a>
+                    </div>
+                </div>
+                <div class="row bottom-footer">
+                    <div class="col-md-12 sprate-line"></div>
+                    <div class="col-md-8">A product of AXON ACTIVE VIETNAM @ 2018 | All rights reserved</div>
+                    <div class="col-md-4" style="text-align: right;">
+                        <a href="#">About us |</a>
+                        <a href="#" title="#">Privacy statement</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <div id="myModal" class="modal fade" role="dialog" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title login-form-title">Create Order</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="get" style="font-family: Poppins-Regular">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-4" style="text-align: center;">
+                                    <img class="img-CO" src="../images/Axon-icon.jpg">
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Title" />
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input class="form-control" type="number" min="0" step="1000" placeholder="Price" />
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">VND</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="number" min="0" step="1" placeholder="Maximum Joiner" />
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group date" style="height: 38px">
+                                            <input class="form-control" type="number" min="0" step="5" placeholder="Minutes to Time Out" id="timeText" value="">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="timepicker">MINS</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <textarea style="height: 181px" class="form-control" placeholder="Description"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="login-form-btn">
+                        <Span>Submit</Span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="login" role="dialog" data-dismiss="modal">
+        <div class="modal-dialog modal-lg modal-dialog-centered" style="width: auto">
+            <div class="container-login">
+                <div class="wrap-login modal-content">
+                    <form class="login-form">
+                        <span class="login-form-title p-b-34" id="title-form" >
+                                                    <strong>Account Login</strong>
+                                                </span>
+                        <div class="wrap-input100 rs1-wrap-input100 validate-input  m-b-20" data-validate="Type user name">
+                            <input id="first-name" class="input100" type="text" name="username" placeholder="User name">
+                            <span class="focus-input100"></span>
+                        </div>
+                        <div class="wrap-input100 rs2-wrap-input100 validate-input  m-b-20" data-validate="Type password">
+                            <input class="input100" type="password" name="pass" placeholder="Password">
+                            <span class="focus-input100"></span>
+                        </div>
+
+                        <div class="wrap-input100 rs1-wrap-input100 validate-input  m-b-20" data-validate="">
+                            <input id="team-name-input" class="input100" type="text" name="teamName" placeholder="Team name">
+                            <span class="focus-input100"></span>
+                        </div>
+                        <div class="wrap-input100 rs2-wrap-input100 validate-input  m-b-20" data-validate="">
+                            <input id ="skype-input" class="input100" type="text" name="skype" placeholder="Skype">
+                            <span class="focus-input100"></span>
+                        </div>
+
+                        <div class="remember-form-label">
+                            <input type="checkbox" name="rememberme" value="newletter">
+                            <label for="rememberme"><strong>Remember me</strong></label>
+                        </div>
+
+                        <div class="container-login-form-btn p-b-10">
+                            <button class="login-form-btn" id="btnSingin">
+                                Sign in
+                            </button>
+                        </div>
+                        <div class="container-login-form-btn">
+                            <button class="login-form-btn" id="btnRegister">
+                               Register
+                            </button>
+                        </div>
+
+                    </form>
+
+                    <div class="login-more" style="background-image: url('../images/Axon-icon.jpg');"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div id="ModalDel" class="modal fade" role="dialog" tabindex="-1" aria-labelledby="ModalDel" aria-hidden="true" >
+    <div class="modal-dialog modal-lg modal-dialog-centered Del" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="#" method="get">
+                    <div class="container-fluid">
+                        <div class="row-content">
+                            <div class="col-sm-6">
+                                <h4>Are you sure??</h4>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">OK</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancle</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div id="ModalEdit" class="modal fade" role="dialog" tabindex="-1" aria-labelledby="ModalEdit" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered Edit" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="title-continer">
+                <h4 class="modal-title">Edit Order</h4>
+                </div>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+             <form action="#" method="get" style="font-family: Poppins-Regular">
+                <div class="container-fluid">
+                        <div class="row">
+                            <div class="Ima">
+                                <div class="imageillus">
+                                    <a data-toggle="collapse" href="#collapse1">
+                                        <img src="../images/images.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="Inf">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Title" value="Pizza" />
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="form-control" type="number" min="0" step="1000" placeholder="Price" value="50.000" />
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">VND</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="number" min="0" step="1" placeholder="Maximum Joiner" value="9"/>
+                                </div>
+                                <div class="form-group">
+                                        <div class="input-group date" style="height: 38px">
+                                            <input class="form-control" type="number" min="0" step="5" placeholder="Minutes to Time Out" id="timeText" value="15">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="timepicker">MINS</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div  class="row">
+                            <div class="ImaSugg ">
+                                <div id="collapse1" class="panel-collapse collapse" >
+
+                                    <div class="chosefile">
+                                        <span class="visibleimg"></span>
+                                        <span class="showonhover">Choose Files</span>
+                                        <input id="selectfile" type="file" name="" style="display: none;" />
+                                    </div>
+                                    <div class="listimage">
+                                        <ul >
+                                            <li class="image-choose">
+                                                <img src="../images/images.jpg">
+                                            </li>
+                                            <li class="image-choose">
+                                                <img src="../images/images.jpg">
+                                            </li>
+                                            <li class="image-choose">
+                                                <img src="../images/images.jpg">
+                                            </li>
+                                            <li class="image-choose">
+                                                <img src="../images/images.jpg">
+                                            </li>
+                                            <li class="image-choose">
+                                                <img src="../images/images.jpg">
+                                            </li>
+                                            <li class="image-choose">
+                                                <img src="../images/images.jpg">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <textarea class="form-control" placeholder="Description" value="Buy pizza from Da Nang city"></textarea>
+                        </div>
+                </div>
+             </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Change</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#timepicker').click(function (){
+        var h = new Date().getHours();
+        var m = new Date().getMinutes();
+        $('#hourText').val(h);
+        $('#minutesText').val(m);
+    });
+    $(document).ready(function(e) {
+        $(".showonhover").click(function(){
+            $("#selectfile").trigger('click');
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    function redirectUrl(url){
+            window.location.href = url;
+    }
+    function changeIcon(id){ 
+    if( $("#"+id).find("i").hasClass("fa fa-angle-double-up fa-2x")){  
+            $("#"+id).find("i").toggleClass("fa fa-angle-double-down fa-2x fa fa-angle-double-up fa-2x ");
+    }
+    else{
+         $(".angle").find("i").removeClass("fa fa-angle-double-up fa-2x").addClass("fa fa-angle-double-down fa-2x");
+        $("#"+id).find("i").toggleClass("fa fa-angle-double-down fa-2x fa fa-angle-double-up fa-2x ");
+    }       
+    }
+</script> 
+
+<script>
+    $("#btnRegister").click(function() {
+            $("#team-name-input").show();
+             $("#skype-input").show();
+              $(".remember-form-label").hide();
+              $("#title-form").html("<strong>Register Account<strong>");
+        });
+
+    $("#btnSingin").click(function() {
+            $("#team-name-input").hide();
+             $("#skype-input").hide();
+              $(".remember-form-label").show();
+              $("#title-form").html("<strong>Account Login<strong>");
+        });
+</script>
+</body>
+</html>

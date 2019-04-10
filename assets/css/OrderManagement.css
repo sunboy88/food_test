@@ -1,0 +1,301 @@
+.Ima{
+	width: 25%;
+}
+.Inf{
+	width: 75%;
+}
+.imageillus{
+	width: 100%;
+}
+.imageillus:hover{
+    opacity: 0.6;
+}
+.hour{
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+	display: inline;
+	background-color: #eee;
+	background-color: none;
+	margin-left: 8px;
+}
+.btn-edit{
+	color: #ccc;
+	float: right;
+}
+.row .ImaSugg{
+	width: 100%;
+	/*background-color: #eee;*/
+	border: none;
+	margin-top: 15px;
+}
+.ImaSugg .chosefile{
+	width: 18%;
+    float: left;
+}
+.chosefile .showonhover {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    padding: 10px;
+    margin: auto;
+    margin-top: 9%;
+    border-radius: 3px;
+    width: 85%;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+.chosefile .showonhover:hover{
+	color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+.ImaSugg .listimage{
+    float: right;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+    padding-left: 0px;
+    width: 80%;
+    max-height: 70px;
+}
+.listimage li{
+	list-style-type: none;
+    float: left;
+    margin: 6px;
+	height: 25%;
+}
+.image-choose img{
+	display: inline;
+	border: 1px solid #ccc;
+	width: 51px;
+	margin-right: 3px;
+}
+.image-choose:hover{
+	opacity: 0.6;
+}
+.number-join-mana{
+	font-size: 20px;
+	margin-top: 0px;
+}
+
+.number-join-mana i{
+	color: red;
+}
+
+.modal-header .modal-title{
+	font-size: 30px;
+}
+.title-continer{
+	align-content: center !important;
+	margin: 0 auto;
+}
+.close{
+	margin-left: 0px !important;
+}
+.info-wrapper h2{
+	margin-top: 4px;
+}
+.form-group .col-sm-12{
+	padding-left: 0px;
+	margin-bottom: 10px;
+}
+.col-sm-12 .form-control{
+	width: 20%;
+	display: inline;
+}
+.col-sm-12{
+	font-weight: bold;
+	font-size: 20px
+}
+.row textarea{
+	width: 100%!important;
+	margin-top: 10px;
+}
+.col-sm-6{
+	max-width: 100%!important;
+
+}
+.btn-edit{
+  margin-top: 55px;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  padding: 3px;
+}
+.btn-edit .btn {
+  font-size: 15px;
+}
+.btn-edit a{
+  border-radius: 0;
+}
+.Del{
+	width: 450px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+.article-content{
+	width: 100%;
+	height: 85%;
+}
+.article-shift{
+	width: 100%;
+	height: 15%;
+	text-align: center;
+    margin-bottom: -12px;
+}
+.article-shift a{
+	transform:scale(2,1);
+ 	width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+	.btn-edit{
+		width: 100%;
+		float: left;
+		font-size: 18px;
+		padding: 3px;
+	}
+	.btn-edit a{
+		width: 45%;
+		border: 1px solid #fff;
+		margin: 0px;
+	}
+	.btn-edit{
+		margin-top: 0;
+	}
+	.Del{
+		width: 80%;
+		margin: auto;
+	}
+	.Ima{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.Edit{
+		margin: auto;
+	}
+	.imageillus{
+        width: 160px;
+		margin: auto;
+	}
+	.Inf{
+		width: 100%;
+		margin: auto;
+	}
+	.chosefile .showonhover{
+		width: 100%;
+		padding-left: 5px;
+	}
+}
+
+
+/*	--------------------------------------------------
+	:: Table Filter
+	-------------------------------------------------- */
+.table-filter {
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+}
+.table-filter tr:hover {
+	cursor: pointer;
+	background-color: #eeeeeeb3;
+	width: 100%;
+    margin: 0px;
+}
+.table-filter tr td {
+	vertical-align: middle;
+	border-top-color: #eee;
+}
+.table-filter tr.selected td {
+	background-color: #eee;
+}
+
+.table-filter .media-photo {
+	width: 70%;
+}
+.media-body {
+	width: 100%;
+	display: block;
+	margin: auto;
+}
+.media-body .title {
+	color: #ea6e0a;;
+	font-size: 1.5rem;
+	font-weight: bold;
+	line-height: normal;
+	margin: 0;
+}
+
+.media-body .summary {
+	overflow-x : hidden;
+	font-size: 15px;
+}
+.media {
+	width: 100%;
+}
+.pull-center{
+	margin: auto;
+}
+.star{
+	width: 100%;
+	text-align: center;
+}
+.star i{
+	padding-top: 25%;
+	font-size: 20px;
+}
+.skype{
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	color: #00b6ff;
+}
+.team{
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	color: #28a745;
+}
+.amount{
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	color: red;
+}
+@media only screen and (max-width: 768px) {
+	.star{
+		display: none;
+	}
+	.media {
+		width: 30%;
+	}
+	.media-body{
+		min-width: 70%;
+	}
+	.media-body .title {
+		width: 100%;
+	}
+
+	.media-body .summary {
+		font-size: 15px;
+		width: 100%;
+	}
+	.skype{
+		width: 50%;
+	}
+	.team{
+		width: 35%;
+	}
+	.amount{
+		width: 15%;
+	}
+}
