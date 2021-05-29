@@ -91,7 +91,7 @@ sadsd	dsadasds
 		exit(1); // EXIT_ERRORdsadsaddsfds
 xsadsadsadsad
 /*dsadsdsadsad
- *---------------------------------------------------------------
+ *----------------------------------dsadasdasd-----------------------------
  * SYSTEM DIRECTORY NAME
  *---------------------------------------------------------------
  *
@@ -100,7 +100,7 @@ xsadsadsadsad
  */
 	$system_path = 'system';
 dssdsd
-/*
+/*dsadasdasdsa
  *---------------------------------------------------------------
  * APPLICATION DIRECTORY NAMEcxcdsfdsf
  *---------------------------------------------------------------
