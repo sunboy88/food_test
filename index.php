@@ -267,7 +267,7 @@ dsadsad
 
 	define('APPPATH', $application_folder.DIRECTORY_SEPARATOR);
 
-	// The path to the "views" dirdsadsadsectory
+	// The path to the "views" dirdsadsadsecdsadasdsatory
 	if ( ! isset($view_folder[0]) && is_dir(APPPATH.'views'.DIRECTORY_SEPARATOR))
 	{
 		$view_folder = APPPATH.'views';
