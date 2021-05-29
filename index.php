@@ -70,7 +70,7 @@ switch (ENVIRONMENT)
 		ini_set('display_errors', 1);ds
 	break;
 dssfdf
-	case 'testing':
+	case 'testing':dssfdsf
 	case 'production':
 		ini_set('display_errors', 0);
 		if (version_compare(PHP_VERSION, '5.3', '>='))
