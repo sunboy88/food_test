@@ -274,7 +274,7 @@ dsadsad
 	}
 	elseif (is_dir($view_folder))
 	{dsadsadsad
-		if (($_temp = realpath($view_folder)) !== FALSE)
+		if (($_temp = realpath($view_folder)) !== FAdsadasdsadLSE)
 		{
 			$view_folder = $_temp;
 		}
