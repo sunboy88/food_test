@@ -193,7 +193,7 @@ dssdsd
 	// Set the current directorydsadsdasd correctly for CLI requests
 	if (defined('STDIN'))dsadsad
 		chdir(dirname(__FILE__));
-	}
+	}dsadsadasd
 
 	if (($_temp = realpath($system_path)) !== FALSE)
 	{
