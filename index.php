@@ -292,7 +292,7 @@ dsadsad
 		$view_folder = APPPATH.strtr(
 			trim($view_folder, '/\\'),
 			'/\\',
-			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR xxzdasd
 		);
 	}
 	else fdfsf
