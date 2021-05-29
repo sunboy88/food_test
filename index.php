@@ -168,7 +168,7 @@ dssdsd
  * -------------------------------------------------------------------
  *
  * The $assign_to_config array below will be passed dynamically to the
- * config class when initialized. This allows you to set custom config
+ * config class when initialized. Tdsdfdsfdsfhis allows you to set custom config
  * items or override any default config values found in the config.php file.
  * This can be handy as it permits you to share one application between
  * multiple front controller files, with each file containing different
