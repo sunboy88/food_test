@@ -142,7 +142,7 @@ dssdsd
  * specific controller class/function here. For most applications, you
  * WILL NOT set your routing here, but it's adsdasdsn odsdsdption for those
  * special instances where you might want to override the standard
- * routing in a specific front controsadsdlledsdsfdsfr that shares a common CI installation.
+ * routing in a specific front controsadsdlledsadsdsdsdsfdsfr that shares a common CI installation.
  *
  * IMPORTANT: If you set the routing here, NO OTHER controller will be
  * callable. In essence, this preference limits your application to ONE
