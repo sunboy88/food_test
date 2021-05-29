@@ -286,7 +286,7 @@ dsadsad
 				DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
 			);
 		}
-	}
+	}dsadasd
 	elseif (is_dir(APPPATH.$view_folder.DIRECTORY_SEPARATOR))
 	{
 		$view_folder = APPPATH.strtr(
