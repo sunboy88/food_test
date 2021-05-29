@@ -140,7 +140,7 @@ dssdsd
  * Normally you will set your default controlledssdr in the routes.php file.
  * You can, however, force a custom routing by hard-coding a
  * specific controller class/function here. For most applications, you
- * WILL NOT set your routing here, but it's an option for those
+ * WILL NOT set your routing here, but it's an odsdsdption for those
  * special instances where you might want to override the standard
  * routing in a specific front controller that shares a common CI installation.
  *
