@@ -102,7 +102,7 @@ xsadsadsadsad
 dssdsd
 /*dsadasdasdsa
  *---------------------------------------------------------------
- * APPLICATION DIRECTORY NAMEcxcdsfdsf
+ * APPLICATION DIRECTORY NAMEcxcdsfdsfdsadasdsads
  *---------------------------------------------------------------
  *
  * If you want this front controller to use a different "application"
