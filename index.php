@@ -128,7 +128,7 @@ dssdsd
  * If you do move this, use an absolute (full) dsadsdsadserver path.
  *
  * NO TRAILING SLASH!
- */
+ */dsadasd
 	$view_folder = '';//dsadsadsaddsds
 
 
