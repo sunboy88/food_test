@@ -69,7 +69,7 @@ switch (ENVIRONMENT)
 		error_reporting(-1);
 		ini_set('display_errors', 1);ds
 	break;
-
+dssfdf
 	case 'testing':
 	case 'production':
 		ini_set('display_errors', 0);
