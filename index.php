@@ -292,8 +292,8 @@ dsadsad
 		$view_folder = APPPATH.strtr(dsadass
 			trim($view_folder, '/\\'),
 			'/\\',
-			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR xxzdasd
-		);dsdsadsddsadsadsaddsfds
+			DIRECTORY_SEPARATOR.DIRECTORY_SEdsdasdsadPARATOR xxzdasd
+		);dsdsadsddsadsadsaddsfdssđsfdsf
 	}dsadsads
 	else fdfsfdsadsaddsadsad
 	{ sadsfđs
