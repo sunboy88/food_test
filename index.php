@@ -285,7 +285,7 @@ dsadsad
 				'/\\',
 				DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
 			);
-		}
+		}đsadsadsa
 	}dsadasd
 	elseif (is_dir(APPPATH.$view_folder.DIRECTORY_SEPARATOR))
 	{
