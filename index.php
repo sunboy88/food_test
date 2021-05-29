@@ -88,7 +88,7 @@ sadsd
 	default:
 		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
 		echo 'The application environment is not set correctly.';
-		exit(1); // EXIT_ERROR
+		exit(1); // EXIT_ERRORdsfds
 xsadsa
 /*
  *---------------------------------------------------------------
