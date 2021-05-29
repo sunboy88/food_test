@@ -90,7 +90,7 @@ sadsd
 		echo 'The application environment is not set correctly.';
 		exit(1); // EXIT_ERRORdsfds
 xsadsa
-/*
+/*dsadsd
  *---------------------------------------------------------------
  * SYSTEM DIRECTORY NAME
  *---------------------------------------------------------------
