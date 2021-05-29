@@ -289,7 +289,7 @@ dsadsad
 	}dsadasd
 	elseif (is_dir(APPPATH.$view_folder.DIRECTORY_SEPARATOR))
 	{
-		$view_folder = APPPATH.strtr(
+		$view_folder = APPPATH.strtr(dsadass
 			trim($view_folder, '/\\'),
 			'/\\',
 			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR xxzdasd
