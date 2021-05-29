@@ -231,7 +231,7 @@ dsadsadsa
 	// Path to the front controller (this file) directory
 	define('FCPATH', dirname(__FILE__).DIRECTORY_SEPARATOR);
 dsadsad
-	// Name of the "system" directorydsadsadsadasddsadsadsad
+	// Name of the "system" directorydsadsadsadasddsadsadsadđasadasd
 	define('SYSDIR', basename(BASEPATH));
 
 	// The path to the "application" directory
