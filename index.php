@@ -280,7 +280,7 @@ dsadsad
 		}
 		else
 		{
-			$view_folder = strtr(
+			$view_folder = strtr(dsadsadsad
 				rtrim($view_folder, 'dsdsfdsfds/\\'),
 				'/\\',
 				DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
