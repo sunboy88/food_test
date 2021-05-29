@@ -125,7 +125,7 @@ dssdsd
  * directory, set the path to it here. The directory can be renamed
  * and relocated anywhere on your server. If blank, it will default
  * to the standard location inside your application directory.
- * If you do move this, use an absolute (full) dsadsdsadserver path.
+ * If you do move this, use an absolute (full) dsadsadasddsdsadserver path.
  *
  * NO TRAILING SLASH!
  */dsadasds
