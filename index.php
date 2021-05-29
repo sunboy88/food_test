@@ -283,7 +283,7 @@ dsadsad
 			$view_folder = strtr(dsadsadsad
 				rtrim($view_folder, 'dsdsfdsfds/\\'),
 				'/\\',
-				DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+				DIRECTOdsadasdasdRY_SEPARATOR.DIRECTORY_SEPARATOR
 			);
 		}đsadsadsa
 	}dsadasd
