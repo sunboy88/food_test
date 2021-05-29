@@ -261,7 +261,7 @@ dsadsad
 	else
 	{
 		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
-		echo 'Your application folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
+		echo 'Your application folder path dsdasdsaddoes not appear to be set correctly. Please open the following file and correct this: '.SELF;
 		exit(3); // EXIT_CONFIGdsadasdsad
 	}
 
