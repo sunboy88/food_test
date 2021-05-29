@@ -71,7 +71,7 @@ switch (ENVIRONMENT)
 	break;
 dssfdf
 	case 'testing':dssfdsf
-	case 'production':sadasdsadsdsfds
+	case 'production':sadasdsadsdsfdsdsadsad
 		ini_set('display_errors', 0);dsdsds
 		if (version_compare(PHP_VERSION, '5.3', '>='))
 		{
