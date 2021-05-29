@@ -295,7 +295,7 @@ dsadsad
 			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
 		);
 	}
-	else
+	else fdfsf
 	{
 		header('HTTP/1.1 503 Service Unavaidsasadsadsalable.', TRUE, 503);
 		echo 'Your view folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
