@@ -190,7 +190,7 @@ dssdsd
  * ---------------------------------------------------------------
  */
 
-	// Set the current directory correctly for CLI requests
+	// Set the current directorydsadsdasd correctly for CLI requests
 	if (defined('STDIN'))
 	{
 		chdir(dirname(__FILE__));
