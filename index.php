@@ -209,7 +209,7 @@ dssdsd
 		).DIRECTORY_SEPARATOR;
 	}
 
-	// Is the system path correct?
+	// Is the system path correct?dsadsad
 	if ( ! is_dir($system_path))
 	{
 		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
