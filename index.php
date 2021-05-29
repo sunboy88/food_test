@@ -273,7 +273,7 @@ dsadsad
 		$view_folder = APPPATH.'views';
 	}
 	elseif (is_dir($view_folder))
-	{
+	{dsadsadsad
 		if (($_temp = realpath($view_folder)) !== FALSE)
 		{
 			$view_folder = $_temp;
