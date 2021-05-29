@@ -293,7 +293,7 @@ dsadsad
 			trim($view_folder, '/\\'),
 			'/\\',
 			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR xxzdasd
-		);dsdsadsd
+		);dsdsadsddsadsadsad
 	}dsadsads
 	else fdfsfdsadsaddsadsad
 	{ sadsfđs
