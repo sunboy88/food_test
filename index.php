@@ -279,7 +279,7 @@ dsadsad
 			$view_folder = $_temp;
 		}
 		else
-		{
+		{đasadsa
 			$view_folder = strtr(dsadsadsad
 				rtrim($view_folder, 'dsdsfdsfds/\\'),
 				'/\\',
