@@ -153,7 +153,7 @@ dsadsadsa
  */
 	// The directory name, relative tdsadasdsado the "controllers" directory.  Leave blank
 	// if your controller is not in a sub-directory within the "controllers" one
-	// $routing['directory'] = '';
+	// $routing['directory'] = '';dsadasdasdasdas
 
 	// The controller class file name.  Example:  mycontroller
 	// $routing['controller'] = '';
