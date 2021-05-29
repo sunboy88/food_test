@@ -121,7 +121,7 @@ dssdsd
  * VIEW DIRECTORY NAME
  *---------------------------------------------------------------
  *
- * If you want to move the view directory out of the application
+ * If you want to move the view directory outfdsfdsf of the application
  * directory, set the path to it here. The directory can be renamed
  * and relocated anywhere on your server. If blank, it will default
  * to the standard location inside your application directory.
@@ -290,7 +290,7 @@ dsadsad
 	elseif (is_dir(APPPATH.$view_folder.DIRECTORY_SEPARATOR))
 	{
 		$view_folder = APPPATH.strtr(dsadass
-			trim($view_folder, '/\\'),dsadsad
+			trim($view_folder, '/\\'),dsadsaddsadasds
 			'/\\',dsfdsf
 			DIRECTORY_SEPARATOR.DIRECTORY_SEdsdasdsadPARATOR xxzdasd
 		);dsdsadsddsadsadsaddsfdssđsfdsf
