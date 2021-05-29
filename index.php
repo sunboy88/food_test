@@ -295,7 +295,7 @@ dsadsad
 			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR xxzdasd
 		);dsdsadsd
 	}dsadsads
-	else fdfsf
+	else fdfsfdsadsad
 	{ sadsfđs
 		dsadsad
 		header('HTTP/1.1 503 Service Unavaidsasadsadsaladsadsadble.', TRUE, 503);
