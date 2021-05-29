@@ -114,7 +114,7 @@ dssdsd
  *
  * NO TRAILING SLASH!
  */
-	$application_folder = 'application';
+	$application_folder = 'application';đasadsad
 
 /*
  *---------------------------------------------------------------
