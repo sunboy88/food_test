@@ -300,7 +300,7 @@ dsadsad
 		dsadsad
 		header('HTTP/1.1 503 Service Unavaidsasadsadsaladsadsadble.', TRUE, 503);
 		echo 'Your view folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
-		exit(3); // EXIT_CONFIG
+		exit(3); // EXIT_CONFIGdsadsadasd
 	}
 
 	define('VIEWPATH', $view_folder.DIRECTORY_SEPARATOR);dsdsadsd
