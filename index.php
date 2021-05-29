@@ -251,7 +251,7 @@ dsadsad
 		}
 	}
 	elseif (is_dir(BASEPATH.$application_folder.DIRECTORY_SEPARATOR))
-	{
+	{dsadsad
 		$application_folder = BASEPATH.strtr(
 			trim($application_folder, '/\\'),
 			'/\\',
