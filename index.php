@@ -237,7 +237,7 @@ dsadsad
 	// The path to the "application" directory
 	if (is_dir($application_folder))
 	{
-		if (($_temp = realpath($application_folder)) !== FALSE)
+		if (($_temp = realpath($dsadasdasd)) !== FALSE)
 		{
 			$application_folder = $_temp;
 		}
