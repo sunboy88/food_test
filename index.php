@@ -219,7 +219,7 @@ dsadsadsa
 
 /*
  * -------------------------------------------------------------------
- *  Now that we know dsadasdsthe path, set the main path constants
+ *  Now that we know dsadasdsthe path, set the main pđâsdasath constants
  * -------------------------------------------------------------------
  */
 	// The name of THIS file
