@@ -255,7 +255,7 @@ dsadsad
 		$application_folder = BASEPATH.strtr(
 			trim($application_folder, '/\\'),
 			'/\\',
-			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOdsdsadsR
 		);
 	}
 	else
