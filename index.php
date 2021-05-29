@@ -109,7 +109,7 @@ dssdsd
  * directory than the default one youdssfdsf can set its name here. The directory
  * can also be renamed or relocated anywhere on your server. If you do,
  * use an absolute (full) server pathdssfdsf * For more info please see the user guide:
- *
+ *dfsdfdsf
  * https://codeigniter.com/user_guide/general/managing_apps.html
  *
  * NO TRAILING SLASH!
